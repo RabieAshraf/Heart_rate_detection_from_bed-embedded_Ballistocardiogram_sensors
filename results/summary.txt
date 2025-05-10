@@ -1,0 +1,71 @@
+Timestamps added successfully. Output saved to bcg_data_with_timestamps.csv
+
+First few rows of the result:
+   BCG      Timestamp   fs
+0  -40  1746807468248  140
+1  -41  1746807468255  140
+2  -36  1746807468262  140
+3  -44  1746807468269  140
+4  -41  1746807468276  140
+-----------------------------------------------------------------
+**Converting the BCG timestamp to human-readable format to be easy to compare it with RR**
+
+First few rows of BCG data with human-readable timestamps:
+   BCG human_readable_timestamp   fs
+0  -40  2025/05/09 16:17:48.248  140
+1  -41  2025/05/09 16:17:48.255  140
+2  -36  2025/05/09 16:17:48.262  140
+3  -44  2025/05/09 16:17:48.269  140
+4  -41  2025/05/09 16:17:48.276  140
+
+First few rows of BCG data with adjusted timestamps:
+   BCG human_readable_timestamp   fs
+0  -40  2023/11/02 21:05:42.564  140
+1  -41  2023/11/02 21:05:42.571  140
+2  -36  2023/11/02 21:05:42.578  140
+3  -44  2023/11/02 21:05:42.585  140
+4  -41  2023/11/02 21:05:42.592  140
+-----------------------------------------------------
+Compare between BCG and RR times to be ready to sync them
+
+BCG Data:
+Start time: 2023-11-02 21:05:42.564000
+End time: 2023-11-03 06:47:53.349000
+
+Heart Rate Data:
+Start time: 2023-11-05 00:03:48
+End time: 2023-11-05 09:29:33
+
+Heart Rate data starts later than BCG data
+BCG data ends earlier than Heart Rate data
+
+Overlap period:
+Start: 2023-11-05 00:03:48
+End: 2023-11-03 06:47:53.349000
+
+------------------------------------------------------
+Filtered BCG Data (Time-based filtering):
+         BCG      Timestamp   fs human_readable_timestamp             time
+1495962 -978  1746818153690  140  2023-11-03 00:03:48.006  00:03:48.006000
+1495963 -973  1746818153698  140  2023-11-03 00:03:48.014  00:03:48.014000
+1495964 -948  1746818153705  140  2023-11-03 00:03:48.021  00:03:48.021000
+1495965 -934  1746818153712  140  2023-11-03 00:03:48.028  00:03:48.028000
+1495966 -922  1746818153719  140  2023-11-03 00:03:48.035  00:03:48.035000
+
+Filtered Heart Rate Data (Time-based filtering):
+            Timestamp  Heart Rate  RR Interval in seconds      time
+0 2023-11-05 00:03:48          84                   0.813  00:03:48
+1 2023-11-05 00:03:49          83                   0.876  00:03:49
+2 2023-11-05 00:03:50          81                   0.745  00:03:50
+3 2023-11-05 00:03:50          81                   0.706  00:03:50
+4 2023-11-05 00:03:51          81                   0.722  00:03:51
+------------------------------------------------------------------------
+Change the fs from 140Hz to 50Hz 
+
+Original duration (s): 24245.35
+Expected resampled length: 1212267.5
+Actual resampled length: 1212268
+-----------------------------------------------------------------------
+Mean Absolute Error (MAE): 13.585078877825975
+Root Mean Square Error (RMSE): 15.853081445423465
+Mean Absolute Percentage Error (MAPE): 20.526217840628405%
