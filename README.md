@@ -29,7 +29,7 @@ This plot shows the correlation between estimated HR from BCG signals and refere
 
 ### Boxplot
 This boxplot visualizes the distribution of HR estimates from BCG signals compared to reference ECG HR.
-
+![Boxplot](results/boxplot.PNG)
 ## How to Run
 ```bash
 jupyter notebook code.ipynb
