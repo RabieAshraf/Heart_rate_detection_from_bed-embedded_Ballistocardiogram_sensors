@@ -37,7 +37,4 @@ jupyter notebook code.ipynb
 **Note: You may need to update the dataset path in the code according to your local file structure.**
 ## Dataset
 The project uses the Ballistocardiogram dataset with reference ECG signals. Make sure to download this dataset and update the file paths in the code before running.
-### Dependencies
-Install the required dependencies:
-```bash
-pip install -r requirements.txt
+
