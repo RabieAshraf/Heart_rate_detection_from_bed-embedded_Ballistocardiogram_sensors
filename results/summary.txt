@@ -1,4 +1,4 @@
-Dataset's sample:
+Dataset sample:
 03_20231105_BCG.csv > BCG
 03_20231105_RR.csv > Heart Rate
 -------------------------------------------------------
