@@ -25,7 +25,7 @@ This plot compares the difference between HR estimates from BCG and ECG over the
 
 ### Pearson Correlation Plot
 This plot shows the correlation between estimated HR from BCG signals and reference HR from ECG signals:
-![Pearson Correlation](results/Pearson%20Correlation.PNG)
+![Pearson Correlation](results/PearsonCorrelation.png)
 
 ### Boxplot
 This boxplot visualizes the distribution of HR estimates from BCG signals compared to reference ECG HR.
