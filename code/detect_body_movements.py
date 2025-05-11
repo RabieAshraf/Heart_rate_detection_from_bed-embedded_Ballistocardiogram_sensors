@@ -96,11 +96,11 @@ def detect_patterns(pt1, pt2, win_size, data, time, plot):
     plt.savefig('../results/rawData.png')
 
     # Now print the return values for debugging
-    print("Returning data, time, event_flags...")
-    print(f"Data: {data[:5]}")  # Print the first 5 values for debugging
-    print(f"Time: {time[:5]}")
-    print(f"Event Flags: {event_flags[:5]}")
-     # Remove Movement (2) and No-Movement (3)
+    # print("Returning data, time, event_flags...")
+    # print(f"Data: {data[:5]}")  # Print the first 5 values for debugging
+    # print(f"Time: {time[:5]}")
+    # print(f"Event Flags: {event_flags[:5]}")
+    # Remove Movement (2) and No-Movement (3)
     bad_window_indices = np.where((event_flags == 2) | (event_flags == 3))[0]
     # Return all three variables
     return data, time, bad_window_indices
