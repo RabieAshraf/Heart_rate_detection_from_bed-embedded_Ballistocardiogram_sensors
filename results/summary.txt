@@ -1,0 +1,48 @@
+Datase's sample:
+03_20231105_BCG.csv > BCG
+03_20231105_RR.csv > Heart Rate
+-------------------------------------------------------
+BCG Data:
+Start time: 2023-11-04 15:47:49.870000
+End time: 2023-11-05 01:30:00.656000
+
+Heart Rate Data:
+Start time: 2023-11-05 00:03:48
+End time: 2023-11-05 09:29:33
+
+Heart Rate data starts later than BCG data
+BCG data ends earlier than Heart Rate data
+
+Overlap period:
+Start: 2023-11-05 00:03:48
+End: 2023-11-05 01:30:00.656000
+-------------------------------------------------------
+Original duration (s): 5172.657142857143
+Expected resampled length: 258632.85714285716
+Actual resampled length: 258633
+-------------------------------------------------------
+Mean Absolute Error (MAE): 7.929687301418802
+Root Mean Square Error (RMSE): 10.065248163700407
+Mean Absolute Percentage Error (MAPE): 9.330170699493497%
+-------------------------------------------------------
+Heart Rate Information from BCG
+Minimum pulse :  63.0
+Maximum pulse :  101.0
+Average pulse :  80.0
+-------------------------------------------------------
+Heart Rate Information from RR
+Minimum pulse :  76.0
+Maximum pulse :  105.0
+Average pulse :  83.0
+-------------------------------------------------------
+Mean Difference: 0.04212129321237489
+-------------------------------------------------------
+Pearson Correlation: -0.04633305502424406
+-------------------------------------------------------
+hr_df_avg_10s: 519
+beats: 517
+-------------------------------------------------------
+hr_df_avg_10s_trimmed: 517
+beats_trimmed: 517
+-------------------------------------------------------
+-------------------------------------------------------
