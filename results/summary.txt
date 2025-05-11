@@ -1,4 +1,4 @@
-Dataset sample:
+1. Dataset sample1:
 03_20231105_BCG.csv > BCG
 03_20231105_RR.csv > Heart Rate
 -------------------------------------------------------
@@ -35,5 +35,42 @@ Average pulse :  83.0
 Mean Difference: 0.04212129321237489
 -------------------------------------------------------
 Pearson Correlation: -0.04633305502424406
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+2. Dataset sample2:
+09_20231110_BCG.csv > BCG
+09_20231110_RR.csv > Heart Rate
 -------------------------------------------------------
+BCG Data:
+Start time: 2023-11-09 15:32:35.018000
+End time: 2023-11-10 01:44:50.454000
+
+Heart Rate Data:
+Start time: 2023-11-09 23:26:00
+End time: 2023-11-10 09:29:45
+
+Heart Rate data starts later than BCG data
+BCG data ends earlier than Heart Rate data
+
+Overlap period:
+Start: 2023-11-09 23:26:00
+End: 2023-11-10 01:44:50.454000
 -------------------------------------------------------
+Statistics 
+Mean Absolute Error (MAE): 11.7209388354323
+Root Mean Square Error (RMSE): 13.801109223092537
+Mean Absolute Percentage Error (MAPE): 13.051238320613749%
+-------------------------------------------------------
+Heart Rate Information from BCG
+Minimum pulse :  58.0
+Maximum pulse :  106.0
+Average pulse :  78.0
+-------------------------------------------------------
+Heart Rate Information from RR
+Minimum pulse :  78.0
+Maximum pulse :  102.0
+Average pulse :  88.0
+-------------------------------------------------------
+Mean Difference: -11.101583704966059
+-------------------------------------------------------
+Pearson Correlation: 0.053654151535485625
